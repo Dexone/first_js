@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Пример использования JavaScript методов push() и unshift()</title>
+	</head>
+	<body>
+		<button onclick = "myFunc2()">В конец очереди</button><br>
+		<input type = "text" placeholder = "Добавьте животное">
+		<p id = "animals"></p>
+
+
+
+		<script>
+	var animals = ["Crocodile", "Elephant", "Tiger"];
+	document.getElementById("animals").innerHTML = animals;
+	var newAnimal;
+	function myFunc2() {
+	  newAnimal = document.getElementsByTagName( "input" )[0].value;
+	  animals.push( newAnimal );
+	  document.getElementById("animals").innerHTML = animals;
+	}		
+    console.log(animals)
+		</script>
+	</body>
+</html>
